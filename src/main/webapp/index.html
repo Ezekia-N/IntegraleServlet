@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calcul d'intégrales</title>
+</head>
+<body>
+    <h1>Calcul d'intégrales numériques</h1>
+
+    <p>Calculer une intégrale avec les méthodes des rectangles et des trapèzes.</p>
+
+    <form action="calculer" method="post">
+        <label for="fonction">Fonction f(x) :</label>
+        <input type="text" id="fonction" name="fonction"
+               placeholder="x^2" required>
+
+        <br><br>
+
+        <label for="borneA">Borne A :</label>
+        <input type="number" id="borneA" name="borneA"
+               value="-1" step="any" required>
+
+        <br><br>
+
+        <label for="borneB">Borne B :</label>
+        <input type="number" id="borneB" name="borneB"
+               value="1" step="any" required>
+
+        <br><br>
+
+        <label for="subdivisions">Nombre de subdivisions :</label>
+        <input type="number" id="subdivisions" name="subdivisions"
+               value="1000" min="1" max="1000000" required>
+
+        <br><br>
+
+        <button type="submit">Calculer</button>
+    </form>
+</body>
+</html>
